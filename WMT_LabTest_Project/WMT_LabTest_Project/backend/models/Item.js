@@ -27,6 +27,11 @@ const itemSchema = new mongoose.Schema(
       default: "",
       trim: true,
     },
+    supplierName: {
+      type: String,
+      required: [true, "Supplier name is required"],
+      trim: true,
+    },
   },
   { timestamps: true }
 );
